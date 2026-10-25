@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DateMagic — создай приглашение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">💗 DateMagic</a>
+    <span class="tag">Твоя история любви</span>
+  </header>
+
+  <main class="hero">
+    <div class="heart">💌</div>
+    <p class="eyebrow">МАЛЕНЬКОЕ ПРИГЛАШЕНИЕ — БОЛЬШИЕ ЭМОЦИИ</p>
+    <h1>Сделай это <span>магическим</span></h1>
+    <p class="description">
+      Создай уникальное приглашение на свидание
+      и поделись им с особенным человеком.
+    </p>
+    <a class="start" href="#creator">Создать приглашение ✨</a>
+  </main>
+
+  <section id="creator" class="creator">
+    <h2>Твоё приглашение</h2>
+    <label for="person">Имя получателя</label>
+    <input id="person" placeholder="Например, Виктория">
+
+    <label for="message">Текст приглашения</label>
+    <textarea id="message">Пойдёшь со мной на свидание? ❤️</textarea>
+
+    <label for="theme">Выбери стиль</label>
+    <select id="theme">
+      <option value="pink">Розовая романтика 💗</option>
+      <option value="night">Ночная магия 🌙</option>
+      <option value="cute">Милые котики 🐱</option>
+    </select>
+
+    <button id="preview">Посмотреть приглашение</button>
+
+    <div id="previewCard" class="preview">
+      <div class="preview-emoji">💖</div>
+      <h2 id="previewName">Для тебя</h2>
+      <p id="previewMessage">Пойдёшь со мной на свидание? ❤️</p>
+      <div class="buttons">
+        <button id="yes">Да! ❤️</button>
+        <button id="no">Нет 🙈</button>
+      </div>
+      <p id="answer" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer>© 2026 DateMagic · Создано с любовью 💗</footer>
+  <script src="script.js"></script>
+</body>
